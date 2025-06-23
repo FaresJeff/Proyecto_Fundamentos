@@ -1,12 +1,3 @@
-def ordenar_diagonal_secundaria(matrix):
-    d = [matrix[i][3 - i] for i in range(4)]
-    for i in range(3):
-        for j in range(i + 1, 4):
-            if d[i] < d[j]:
-                d[i], d[j] = d[j], d[i]
-    for i in range(4):
-        matrix[i][3 - i] = d[i]
-
 def main():
     matriz = [
         [2, 7, 8, 12],
@@ -17,5 +8,12 @@ def main():
     ordenar_diagonal_secundaria(matriz)
     for fila in matriz:
         print(fila)
-
+def ordenar_diagonal_secundaria(matrix):
+    d = [matrix[i][3 - i] for i in range(4)]
+    for i in range(3):
+        for j in range(i + 1, 4):
+            if d[i] < d[j]:
+                d[i], d[j] = d[j], d[i]
+    for i in range(4):
+        matrix[i][3 - i] = d[i]
 main()

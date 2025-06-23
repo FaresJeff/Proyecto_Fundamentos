@@ -2,7 +2,6 @@ def main():
     notas = []
     for i in range(10):
         notas.append(validar_nota(i))
-    
     print("Notas registradas:", notas)
 def validar_nota(i):
     nota = -1
