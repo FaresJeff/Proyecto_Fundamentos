@@ -1,8 +1,8 @@
-def ordenar_descendente(v):
+def ordenar_descendente(vector):
     for i in range(4):
         for j in range(i + 1, 5):
-            if v[i] < v[j]:
-                v[i], v[j] = v[j], v[i]
+            if vector[i] < vector[j]:
+                vector[i], vector[j] = vector[j], vector[i]
 def main():
     vector = [12, 5, 20, 7, 15]
     print("Vector original:", vector)
