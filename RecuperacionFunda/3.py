@@ -8,3 +8,5 @@ def calcAreaTri(base:int,altura:int)->float:
     a = (base * altura)/2
     return a
 main()
+
+#Ejercicio 3

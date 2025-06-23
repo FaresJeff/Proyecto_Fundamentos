@@ -10,3 +10,5 @@ def main():
     print("Vector ordenado de mayor a menor:", vector)
 
 main()
+
+#Ejercicio 2
